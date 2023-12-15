@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* 访问 <https://www.typescriptlang.org/tsconfig>了解更多 */
+
+    //⭐生成的ES版本，一般不用 TSC 做转译，而是用 Babel 等工具
+    "target": "ESNext",
+    //  class fields 提案
+    "useDefineForClassFields": true,
+
+    //⭐生成的模板规范，使用构建工具即可
+    "module": "ESNext",
+    //⭐ 模板的解析策略 5.0 以上使用 Bundler
+    "moduleResolution": "Node",
+    // 可以导入JSON模板
+    "resolveJsonModule": true,
+    //  import type
+    "isolatedModules": true,
+    // 在`<script setup>`中保留导入，与 isolatedModules 结合使用
+    "preserveValueImports": true,
+    // 强制使用 `import type` 导入类型
+    "importsNotUsedAsValues": "error",
+    // 解决上面两条 TS 低于5.0 的警告
+    "ignoreDeprecations": "5.0",
+
+    // 简化 import * as xx from 'xx' 语法
+    "esModuleInterop": true,
+
+    // 强制大小写
+    "forceConsistentCasingInFileNames": true,
+    // 类型检查严格模式
+    "strict": true,
+    // 跳过声明文件的类型检查,提高性能
+    "skipLibCheck": true,
+    "types": []
+  }
+}

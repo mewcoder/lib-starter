@@ -1,0 +1,9 @@
+{
+  "name": "@mewcoder/configs",
+  "version": "0.0.1",
+  "author": {
+    "name": "mewcoder",
+    "email": "mewcoder@qq.com"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* 访问 <https://www.typescriptlang.org/tsconfig>了解更多 */
+
+    //⭐生成的ES版本，一般不用 TSC 做转译，而是用 Babel 等工具
+    "target": "ESNext",
+    //  class fields 提案
+    "useDefineForClassFields": true,
+
+    //⭐生成的模板规范，使用构建工具即可
+    "module": "ESNext",
+    //⭐ 模板的解析策略 5.0 以上使用 Bundler
+    "moduleResolution": "Bundler",
+    // 可以导入JSON模板
+    "resolveJsonModule": true,
+    //  import type
+    "isolatedModules": true,
+    // 5.0 新增
+    "verbatimModuleSyntax": true,
+    // 简化 import * as xx from 'xx' 语法
+    "esModuleInterop": true,
+
+    // 强制大小写
+    "forceConsistentCasingInFileNames": true,
+    // 类型检查严格模式
+    "strict": true,
+    // 跳过声明文件的类型检查,提高性能
+    "skipLibCheck": true,
+    "types": []
+  }
+}

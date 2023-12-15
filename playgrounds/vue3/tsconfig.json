@@ -1,0 +1,18 @@
+{
+  "extends": "@mewcoder/configs/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "vite.config.ts"],
+  "compilerOptions": {
+    "jsx": "preserve",
+    // <https://cn.vuejs.org/guide/extras/render-function.html#jsx-type-inference>
+    "jsxImportSource": "vue",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["node"]
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

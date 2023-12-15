@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    //⭐使用的库声明
+    "lib": ["ESNext", "DOM", "DOM.Iterable"]
+    // vue 使用 preserve，react17 后使用 react-jsx
+    // "jsx": "preserve",
+    // vue3.3 以上开启并使用 vue <https://cn.vuejs.org/guide/extras/render-function.html#jsx-type-inference>
+    // "jsxImportSource": "vue",
+  }
+}

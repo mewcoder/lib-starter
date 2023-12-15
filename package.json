@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev:docs": "pnpm run --filter ./docs  dev",
+    "dev:2": "pnpm run --filter ./playgrounds/vue2 -r dev",
+    "dev:3": "pnpm run --filter ./playgrounds/vue3 dev",
+    "build": "pnpm run --filter ./packages/** -r build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1"
+  }
+}
